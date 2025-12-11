@@ -750,7 +750,7 @@
     <div id="start-modal" class="modal">
         <div class="modal-content">
             <h1 class="text-3xl font-bold mb-4">DiabeDash</h1>
-            <p class="mb-6">Navigate through a vibrant world collecting healthy foods for +10₹ while avoiding unhealthy ones that cost you -5₹!</p>
+            <p class="mb-6">Navigate through a vibrant world collecting healthy foods for +10 coins while avoiding unhealthy ones that cost you -5 coins!</p>
             
             <div class="mb-6">
                 <p class="font-bold mb-2">How to play:</p>
@@ -828,7 +828,7 @@
         // --- GEMINI CHATBOT CONFIGURATION ---
         // ⚠️ WARNING: DO NOT USE THIS METHOD IN PRODUCTION. API KEYS MUST BE KEPT SECRET.
         // For a public app, use a server proxy to hide your key.
-        const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"; 
+        const GEMINI_API_KEY = "AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k"; 
         const GEMINI_MODEL = "gemini-2.5-flash";
         const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
         
@@ -1335,8 +1335,8 @@
         // ASYNC function to send message to the Gemini API
         async function generateGeminiResponse(userMessage) {
             
-            if (GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE") {
-                return "Please replace 'YOUR_GEMINI_API_KEY_HERE' in the script with your actual Gemini API Key to enable the AI coach!";
+            if (GEMINI_API_KEY === "AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k") {
+                return "Please replace 'AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k' in the script with your actual Gemini API Key to enable the AI coach!";
             }
             
             // Add the user's message to the chat history
@@ -1441,4 +1441,5 @@
         // The original static response logic is removed entirely.
     </script>
 </body>
+
 </html>
