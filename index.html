@@ -74,6 +74,34 @@
             border-color: white;
         }
 
+        /* Quit Button Style */
+        .quit-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 600;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .quit-btn:hover {
+            background: rgba(255, 71, 87, 0.9);
+            border-color: rgba(255, 71, 87, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 71, 87, 0.4);
+        }
+
         /* --- LOGIN PAGE STYLES --- */
         #page-login {
             display: none;
@@ -596,6 +624,10 @@
 
     <div id="page-game" class="page-section">
         <div id="game-container">
+            <button id="quit-game-btn" class="quit-btn">
+                <span>🛑 End & Chat</span>
+            </button>
+
             <div class="ground">
                 <div class="ground-segment"></div>
                 <div class="ground-segment"></div>
@@ -768,7 +800,7 @@
         // ⚠️ WARNING: DO NOT USE THIS METHOD IN PRODUCTION. API KEYS MUST BE KEPT SECRET.
         // 1. Get a key from https://aistudio.google.com/
         // 2. Paste it below inside the quotes
-        const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"; 
+        const GEMINI_API_KEY = "AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k"; 
         const GEMINI_MODEL = "gemini-1.5-flash";
         
         // This is the REST API Endpoint for Gemini
@@ -837,6 +869,21 @@
         document.getElementById('chat-send').addEventListener('click', sendMessage);
         document.getElementById('chat-input').addEventListener('keypress', handleChatKeyPress);
         
+        // NEW EVENT LISTENER FOR QUIT BUTTON
+        document.getElementById('quit-game-btn').addEventListener('click', () => {
+            if(gameActive) {
+                gameActive = false;
+                // Clean up intervals
+                clearInterval(foodInterval);
+                clearInterval(buildingInterval);
+                clearInterval(cloudInterval);
+                document.querySelectorAll('.food-item').forEach(item => item.remove());
+                
+                // Show Game Over immediately
+                endGame();
+            }
+        });
+
         quickResponseBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 chatInput.value = btn.dataset.response;
@@ -1090,7 +1137,7 @@
             
             try {
                 // Check for API Key
-                if (GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE" || GEMINI_API_KEY === "") {
+                if (GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE" || GEMINI_API_KEY === "AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k") {
                     throw new Error("API Key Missing");
                 }
 
