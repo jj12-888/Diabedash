@@ -798,7 +798,7 @@
 
         // --- GEMINI CHATBOT CONFIGURATION ---
         // ⚠️ WARNING: DO NOT USE THIS METHOD IN PRODUCTION. API KEYS MUST BE KEPT SECRET.
-        // The user provided key has been integrated below.
+        // PASTE YOUR KEY HERE BELOW (Inside the quotes):
         const GEMINI_API_KEY = "AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k"; 
         const GEMINI_MODEL = "gemini-1.5-flash";
         
@@ -1136,7 +1136,7 @@
             
             try {
                 // Check for API Key
-                if (GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE" || GEMINI_API_KEY === "") {
+                if (GEMINI_API_KEY === "PASTE_YOUR_KEY_HERE" || GEMINI_API_KEY === "") {
                     throw new Error("API Key Missing");
                 }
 
@@ -1144,7 +1144,6 @@
                 chatHistory.push({ role: "user", parts: [{ text: message }] });
 
                 // 3. Prepare the Payload for REST API
-                // Note: systemInstruction must be at the top level
                 const payload = {
                     contents: chatHistory,
                     systemInstruction: {
@@ -1152,7 +1151,7 @@
                     }
                 };
                 
-                // 4. Update URL with current key (in case it was changed after load)
+                // 4. Update URL with current key
                 const currentUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
                 // 5. Send Request
