@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiabeDash - Complete App</title>
+    <title>DiabeDash - The Complete App</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
@@ -517,7 +517,7 @@
             <form onsubmit="navigateTo('dashboard'); return false;">
                 <div class="text-left mb-4">
                     <label class="block mb-1 font-semibold text-sm">Username</label>
-                    <input type="text" class="form-input mb-0" placeholder="Runner123" required>
+                    <input type="text" class="form-input mb-0" placeholder="Player" required>
                 </div>
                 
                 <div class="text-left mb-4">
@@ -537,8 +537,8 @@
             <div class="flex items-center gap-4">
                 <div class="w-12 h-12 bg-gradient-to-br from-pink-300 to-pink-100 rounded-full flex items-center justify-center font-bold text-gray-800 text-xl">J</div>
                 <div>
-                    <h2 class="text-xl font-bold">Hi, Jia!</h2>
-                    <span class="text-sm opacity-80">Level 5 Runner</span>
+                    <h2 class="text-xl font-bold">Hi there</h2>
+                    <span class="text-sm opacity-80">Level Runner</span>
                 </div>
             </div>
             <button onclick="navigateTo('login')" class="btn-outline">Log Out</button>
@@ -797,9 +797,7 @@
         }
 
         // --- GEMINI CHATBOT CONFIGURATION ---
-        // ⚠️ WARNING: DO NOT USE THIS METHOD IN PRODUCTION. API KEYS MUST BE KEPT SECRET.
-        // PASTE YOUR KEY HERE BELOW (Inside the quotes):
-        const GEMINI_API_KEY = "AIzaSyCyAFRkjMYPy17d9kvTZRkpUjAPyxQYo-k"; 
+        const GEMINI_API_KEY = ""; 
         const GEMINI_MODEL = "gemini-1.5-flash";
         
         // This is the REST API Endpoint for Gemini
@@ -1231,3 +1229,4 @@
     </script>
 </body>
 </html>
+
