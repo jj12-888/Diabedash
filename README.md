@@ -1,6 +1,8 @@
 <img width="312" height="81" alt="image" src="https://github.com/user-attachments/assets/0d8000fe-befd-4c50-9dd5-1991d12655dc" />
 
 
+
+
  
 Introduction: Diabetes mellitus is a chronic metabolic disorder that requires continuous attention to dietary choices, lifestyle habits, and self-management. For children living with diabetes or at risk of developing type 2 diabetes, understanding healthy eating habits at an early age can be challenging. Conventional health education methods may not always sustain children's interest or translate nutritional knowledge into everyday decision-making. This creates an opportunity to explore interactive, age-appropriate digital interventions that make health education more engaging, accessible, and understandable.
 
