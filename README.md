@@ -1,115 +1,101 @@
-# 🩺 DiabeDash — Gamified Nutrition Education for Children
+# DiabeDash
 
-<p align="center">
-  <strong>Making healthy eating education interactive, engaging, and accessible through gamification and AI.</strong>
-</p>
+**A Gamified Approach to Nutrition Education and Diabetes Awareness in Children**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Domain-Digital%20Health-2ea44f?style=for-the-badge" alt="Digital Health" />
-  <img src="https://img.shields.io/badge/AI-Gemini-4285F4?style=for-the-badge" alt="Gemini AI" />
-  <img src="https://img.shields.io/badge/Focus-Pediatric%20Health-ff69b4?style=for-the-badge" alt="Pediatric Health" />
-  <img src="https://img.shields.io/badge/Status-Research%20%26%20Development-orange?style=for-the-badge" alt="Research and Development" />
-</p>
+## Overview
 
----
+DiabeDash is a digital health education platform designed to introduce children to healthier food choices and diabetes-related nutritional awareness through interactive gameplay and AI-assisted guidance.
 
-##  Overview
+The platform combines a runner-style game with a conversational Healthy Eating Coach to create an engaging environment for exploring basic nutrition concepts.
 
-**DiabeDash** is a gamified digital health education platform designed to introduce children to healthier food choices and diabetes-related nutritional awareness through interactive gameplay and AI-assisted guidance.
+## Features
 
-By combining game mechanics with a conversational AI coach, DiabeDash explores how digital experiences can make nutrition education more engaging and help children reflect on everyday dietary decisions.
+- **Interactive Gameplay:** Collect healthier food items, avoid less nutritious choices, and receive score-based feedback.
+- **Nutrition Education:** Introduces food-selection concepts through simple, interactive challenges.
+- **AI Healthy Eating Coach:** Provides accessible explanations of nutrition concepts and suggestions for healthier alternatives.
+- **Gamified Learning:** Uses rewards and immediate feedback to encourage active participation.
 
-The project brings together **biomedical engineering, gamification, digital health, and artificial intelligence** to explore new approaches to child-friendly health education.
-
-##  Objectives
-
-- Encourage recognition of healthier food choices through interactive gameplay.
-- Make nutrition education engaging through rewards, challenges, and penalties.
-- Provide AI-assisted nutritional explanations and healthier alternatives.
-- Explore the potential of gamified learning to support diabetes self-management awareness.
-- Establish a foundation for evaluating usability, engagement, and educational outcomes.
-
-## How It Works
-
-DiabeDash combines a runner-style game with an AI-powered learning experience.
-
-### 1. Interactive Food Runner
-
-Players navigate a game environment where food choices influence their score.
-
-- **Collect healthy foods** to earn rewards.
-- **Avoid less nutritious choices** to prevent penalties.
-- Learn through immediate, game-based feedback.
-
-### 2. Healthy Eating Challenges
-
-The gameplay introduces food-selection decisions in a simplified, child-friendly environment. These challenges are intended to encourage awareness of healthier dietary choices without replacing individualised nutritional advice.
-
-### 3. AI Healthy Eating Coach
-
-An integrated conversational coach helps players explore nutrition concepts, understand food choices, and discover healthier alternatives.
-
-The coach is designed to complement the gameplay with accessible, supportive educational guidance.
-
-##  Research Motivation
-
-Children may find conventional nutrition education difficult to engage with consistently. Gamification offers a potential way to introduce health concepts through active participation, while conversational AI may help provide explanations in an accessible format.
-
-DiabeDash provides a platform for investigating questions such as:
-
-- Can interactive food-selection games improve children's nutrition knowledge?
-- Does immediate game feedback encourage better understanding of food choices?
-- Can AI-assisted explanations make nutrition concepts easier to understand?
-- How do usability, engagement, and learning outcomes vary across age groups?
-
-These questions require systematic evaluation; they should not be treated as established outcomes of the current implementation.
-
-##  Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| React | Interactive user interface |
+| React | User interface |
 | TypeScript / JavaScript | Application logic |
-| Vite | Development server and build tooling |
-| Tailwind CSS | Responsive styling |
-| Node.js and Express | Backend API proxy |
-| Gemini API | AI-assisted Healthy Eating Coach |
-| Firebase | Application services and integration |
-| Vercel | Web deployment |
+| Vite | Development and build tooling |
+| Tailwind CSS | Styling |
+| Node.js and Express | Backend and API integration |
+| Google Gemini API | AI-assisted educational guidance |
+| Firebase | Application services, where applicable |
+| Vercel | Deployment |
 
-*The table describes the project's intended or previously used stack. Update it to match the current repository implementation.*
+## Getting Started
 
-## 🏗️ System Architecture
+### Prerequisites
 
-```mermaid
-flowchart TD
-    A[Child / Player] --> B[DiabeDash Web Interface]
-    B --> C[Runner Game]
-    B --> D[Healthy Eating Challenges]
-    C --> E[Score and Feedback]
-    D --> E
-    B --> F[AI Healthy Eating Coach]
-    F --> G[Node.js / Express API Proxy]
-    G --> H[Gemini API]
-    H --> G
-    G --> F
-    F --> I[Educational Guidance]
+- Node.js and npm
+- Git
+- Gemini API key, if using the AI coach
+- Firebase configuration, if required
 
- Future Enhancements
+### Installation
 
-- Adaptive challenges based on gameplay performance.
-- Learning-progress dashboards.
-- Expanded, expert-reviewed food education content.
-- Age-appropriate explanations and accessibility improvements.
-- Controlled evaluation of educational effectiveness.
-- Collaboration with paediatric and endocrinology specialists.
+Clone the repository:
 
-##  Medical Disclaimer
+```bash
+git clone <repository-url>
+cd DiabeDash
+```
 
-**DiabeDash is an educational project, not a medical device or treatment system.** It does not measure blood glucose, diagnose diabetes, prescribe diets, or replace a qualified healthcare professional. Its educational effectiveness and potential behavioural benefits must be established through appropriate evaluation.
+Install dependencies:
 
+```bash
+npm install
+```
 
-<p align="center">
-  <strong>DiabeDash</strong><br/>
-  <em>Play. Learn. Make Healthier Choices.</em>
-</p>
+Configure the required environment variables in the backend environment file:
+
+```env
+GEMINI_API_KEY=your_api_key
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+If the backend is maintained separately, start it using the commands specified in its `package.json`.
+
+Do not commit API keys or credentials to the repository.
+
+## Research Motivation
+
+DiabeDash explores the use of gamification and conversational AI in child-focused nutrition education. The project provides a foundation for investigating whether interactive challenges and contextual feedback can support nutrition knowledge and dietary decision-making awareness.
+
+Potential evaluation areas include usability, engagement, knowledge retention, and learning outcomes.
+
+## Future Development
+
+- Adaptive gameplay and personalised educational feedback
+- Expanded, evidence-informed nutrition content
+- Learning progress tracking
+- Accessibility improvements
+- Structured usability and educational evaluation
+- Collaboration with nutrition and paediatric healthcare professionals
+
+## Limitations
+
+DiabeDash is an educational project, not a diagnostic or therapeutic medical device. It does not measure blood glucose, prescribe diets, or replace professional medical advice.
+
+Its educational effectiveness and potential behavioural benefits require appropriate evaluation before any claims of improvement can be made.
+
+## Research Direction
+
+**Proposed title:** *DiabeDash: Design and Evaluation of a Gamified, AI-Assisted Platform for Nutrition Education and Diabetes Self-Management Awareness in Children.*
+
+The research aims to examine the platform's usability, engagement, and potential to support nutrition learning through interactive digital experiences.
+
+---
+
+*DiabeDash — Interactive learning for nutrition awareness.*
+
