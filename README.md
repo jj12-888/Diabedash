@@ -4,7 +4,7 @@
 
 ## Overview
 
-DiabeDash is a digital health education platform designed to introduce children to healthier food choices and diabetes-related nutritional awareness through interactive gameplay and AI-assisted guidance.
+DiabeDash is a digital health education platform designed to introduce children to healthier food choices and diabetes-related nutritional awareness through interactive gameplay and AI assisted guidance.
 
 The platform combines a runner-style game with a conversational Healthy Eating Coach to create an engaging environment for exploring basic nutrition concepts.
 
