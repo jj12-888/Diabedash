@@ -1,7 +1,8 @@
 <img width="312" height="81" alt="image" src="https://github.com/user-attachments/assets/0d8000fe-befd-4c50-9dd5-1991d12655dc" />
-### Introduction
 
-Diabetes mellitus is a chronic metabolic disorder that requires continuous attention to dietary choices, lifestyle habits, and self-management. For children living with diabetes or at risk of developing type 2 diabetes, understanding healthy eating habits at an early age can be challenging. Conventional health education methods may not always sustain children's interest or translate nutritional knowledge into everyday decision-making. This creates an opportunity to explore interactive, age-appropriate digital interventions that make health education more engaging, accessible, and understandable.
+
+ 
+Introduction: Diabetes mellitus is a chronic metabolic disorder that requires continuous attention to dietary choices, lifestyle habits, and self-management. For children living with diabetes or at risk of developing type 2 diabetes, understanding healthy eating habits at an early age can be challenging. Conventional health education methods may not always sustain children's interest or translate nutritional knowledge into everyday decision-making. This creates an opportunity to explore interactive, age-appropriate digital interventions that make health education more engaging, accessible, and understandable.
 
 **DiabeDash** is a gamified digital health platform designed to introduce children to healthy eating and diabetes-related nutritional awareness through interactive gameplay and artificial intelligence (AI)-assisted guidance. The platform incorporates a three-round runner game in which players collect healthy food items to earn rewards and avoid less nutritious choices to prevent penalties. Through this reward-based mechanism, DiabeDash aims to encourage children to recognise healthier food choices in an engaging, game-oriented environment.
 
